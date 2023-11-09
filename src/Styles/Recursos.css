@@ -1,0 +1,134 @@
+.Recursos {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+.Texto-lancamento {
+  text-align: start;
+  margin-bottom: 1rem;
+}
+
+.Blocos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bloquinho {
+  flex-basis: calc(33.33% - 10px);
+  margin: 0.3rem; /* Aumentei a margem */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 22.5rem;
+}
+
+.Blocos img {
+  margin-left: 0; /* Removi a margem esquerda */
+  max-width: 70%;
+  height: auto;
+  margin-bottom: 0.5rem; /* Aumentei o espaçamento entre imagem e texto */
+}
+
+.Blocos-text {
+  font-size: 1.2rem;
+  background: #9595958a;
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 100%;
+  margin-top: auto;
+}
+
+@media (min-width: 376px) and (max-width: 800px) {
+
+  .Recursos {
+    background-color: #ffffff;
+    padding:.5rem;
+  }
+  
+  .Texto-lancamento {
+    text-align: start;
+    margin-bottom: 0.5rem;
+  }
+  
+  .Blocos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .bloquinho {
+    flex-basis: calc(50% - 10px);
+    margin: 0.3rem; /* Aumentei a margem */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 15.5rem;
+  }
+  
+  .Blocos img {
+    margin-left: 0; /* Removi a margem esquerda */
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 0.5rem; /* Aumentei o espaçamento entre imagem e texto */
+  }
+  
+  .Blocos-text {
+    font-size: .75rem;
+    background: #9595958a;
+    border-radius: 2rem;
+    padding: .5rem;
+    width: 100%;
+    margin-top: 2rem;
+
+
+  }
+
+}
+
+@media (max-width: 375px) {
+
+  .Recursos {
+    background-color: #ffffff;
+    padding: 0.5rem;
+  }
+
+  .Texto-lancamento {
+    text-align: start;
+    margin-bottom: 0.5rem;
+  }
+
+  .Blocos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .bloquinho {
+    flex-basis: calc(100% - 10px); /* Ajuste para ocupar a largura total */
+    margin: 0.3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 15.5rem;
+  }
+
+  .Blocos img {
+    margin-left: 0;
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .Blocos-text {
+    font-size: 0.75rem;
+    background: #9595958a;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    width: 100%;
+    margin-top: 0.5rem; /* Ajuste para adicionar espaçamento entre blocos */
+  }
+}

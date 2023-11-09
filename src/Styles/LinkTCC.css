@@ -1,0 +1,97 @@
+/* Estilos para telas maiores (por exemplo, desktop) */
+.Texto {
+    margin: 2.6rem 0 3rem 1rem;
+}
+
+.Texto h2 {
+    font-size: 2.5rem;
+    color: var(--azul-principal);
+}
+
+.Texto p {
+    font-size: 1.6rem;
+}
+
+.Link-img {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.imagem img {
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 2rem;
+}
+
+.botao {
+    background-color: var(--azul-transp);
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 3rem;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.link-sem-sublinhado {
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+}
+
+.botao strong {
+    font-size: larger;
+}
+
+.botao:hover {
+    background: none;
+}
+
+/* Consulta de mídia para telas menores */
+@media screen and (max-width: 425px) {
+    .Texto {
+        margin: 1rem 0; /* Ajusta as margens para dispositivos menores */
+    }
+
+    .Texto h2 {
+        font-size: 2rem; /* Reduz o tamanho da fonte */
+    }
+
+    .Texto p {
+        font-size: 1.4rem; /* Reduz o tamanho da fonte */
+    }
+
+    .imagem img {
+        margin-bottom: 1rem; /* Ajusta a margem inferior para dispositivos menores */
+    }
+
+    .botao {
+        font-size: 1.4rem; /* Reduz o tamanho da fonte */
+        margin: 2rem auto; /* Centraliza o botão horizontalmente */
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .Texto {
+        margin: 1rem 0; /* Ajusta as margens para dispositivos menores */
+    }
+
+    .Texto h2 {
+        font-size: 2rem; /* Reduz o tamanho da fonte */
+    }
+
+    .Texto p {
+        font-size: 1.4rem; /* Reduz o tamanho da fonte */
+    }
+
+    .imagem img {
+        margin-bottom: 1rem; /* Ajusta a margem inferior para dispositivos menores */
+        height: 20vh;
+    }
+
+    .botao {
+        width: 100%;
+        font-size: 1rem; /* Reduz o tamanho da fonte */
+        margin: 1rem 0; /* Ajusta a margem superior e inferior para dispositivos menores */
+    }
+}

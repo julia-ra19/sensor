@@ -1,0 +1,28 @@
+/* Estilos base */
+.imgdecanto {
+    display: inline-flex;
+    /* Reduzido o deslocamento superior para dispositivos menores */
+    position: relative;
+    width: 100%;
+    height: auto; /* Altura automática para se adaptar ao conteúdo */
+}
+
+.imgdecanto img {
+
+    position: absolute;
+    right: 0;
+    margin-top: -10rem;
+    max-width: 100%; /* Certifica-se de que a imagem não exceda a largura do contêiner */
+    height: 30vh; /* Mantém a proporção da imagem */
+}
+
+/* Consulta de mídia para telas menores */
+@media screen and (max-width: 768px) {
+    .imgdecanto {
+        margin-top: 1rem; /* Reduzido ainda mais o deslocamento superior */
+    }
+    .imgdecanto img {
+        margin-top: -6rem;
+
+    }
+}

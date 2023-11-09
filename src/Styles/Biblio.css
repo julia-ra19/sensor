@@ -1,0 +1,57 @@
+/* Estilos base */
+.Carro-final {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: auto; /* Altura automática para se adaptar ao conteúdo */
+}
+
+.Carro-final img {
+    max-width: 100%; /* Certifica-se de que a imagem não exceda a largura do contêiner */
+    max-height: 100%; /* Certifica-se de que a imagem não exceda a altura do contêiner */
+}
+
+.Lista-vertical {
+    font-size: 2rem;
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.Lista-vertical a {
+    text-decoration: none;
+    color: black;
+}
+
+.Lista-vertical li {
+    padding-bottom: 1rem;
+}
+
+.Lista-vertical a:hover {
+    cursor: pointer;
+    color: aquamarine;
+}
+
+
+/* Consulta de mídia para telas menores (mobile) */
+@media screen and (max-width: 768px) {
+    .Lista-vertical {
+        font-size: 1rem; /* Reduz o tamanho da fonte */
+        margin-left: 2rem;
+        margin-right: 2rem; /* Remova a margem esquerda para melhorar o espaço na tela menor */
+    }
+
+    .Carro-final {
+        flex-direction: column; /* Empilhe verticalmente em telas menores */
+        align-items: flex-start; /* Alinhe à esquerda verticalmente em telas menores */
+    }
+
+    .Lista-vertical li {
+        padding-bottom: 0.5rem; /* Reduza o espaçamento entre os itens da lista */
+    }
+
+    .Lista-vertical a {
+        word-wrap: break-word; /* Adicione quebra de texto para palavras longas */
+        white-space: normal; /* Evite que o texto ultrapasse a tela */
+    }
+}

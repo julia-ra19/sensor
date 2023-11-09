@@ -1,0 +1,67 @@
+
+.Inicio-Header {
+    background-image: url('../Imagens/FundoCompleto.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55rem;
+    width: 100%;
+}
+
+
+.Centro img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.Centro {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 2rem 0; 
+}
+
+.Centro p {
+    margin: 0; 
+}
+
+.Centro span {
+    font-size: 4rem; 
+    color: var(--azul-principal);
+    font-weight: 600;
+}
+
+
+/* @media screen and (max-width: 768px) {
+    .Centro {
+        font-size: 2rem; 
+    }
+
+    .Centro span {
+        font-size: 3rem; 
+    }
+} */
+
+@media screen and (max-width: 425px) {
+    .Centro {
+        font-size: 1rem; /* Reduz o tamanho da fonte */
+    }
+
+    .Centro span {
+        font-size: 1rem; /* Reduz o tamanho da fonte */
+    }
+
+        .Centro img {
+            width: 70%;
+        }
+
+    Header {
+        height: 4rem;
+    }
+
+    .Inicio-Header {
+        height: 20rem;
+        width: 100%;
+    }
+
+    
+}

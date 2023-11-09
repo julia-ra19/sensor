@@ -1,0 +1,78 @@
+/* Estilos para telas maiores (por exemplo, desktop) */
+.AD {
+  background-image: url('../Imagens/AD.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.AD {
+  display: flex;
+  justify-content: flex-end; /* Alinha o conteúdo à direita */
+  align-items: flex-start; /* Alinha o conteúdo ao topo */
+  height: 80vh; /* Altura total da viewport (ajuste conforme necessário) */
+}
+
+
+.Propaganda {
+  margin: 3rem;
+  font-size: 2.5rem;
+  color: white;
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+.Propaganda h2,
+.Propaganda p {
+  padding: 1rem;
+  padding-right: 2rem;
+}
+
+.Propaganda h2 {
+  padding-top: 4rem;
+}
+
+.Propaganda button {
+  margin-top: 1.6rem; /* Espaçamento entre o texto e o botão */
+  align-self: flex-end; /* Alinha o botão à direita */
+}
+
+.AD-butao button {
+  font-size: 3rem;
+  border: none;
+  display: inline-block; /* Para tornar o elemento um bloco inline */
+  padding: 1.6rem 3.2rem; /* Espaçamento interno para o botão */
+  background-color: var(--azul-principal); /* Cor de fundo do botão */
+  color: #ffffff; /* Cor do texto */
+  border-radius: 3rem; /* Bordas arredondadas */
+  text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+.AD-butao button:hover {
+  cursor: pointer; /* Cursor de mão ao passar o mouse */
+  background-color: #97f2fa87; /* Cor de fundo quando o mouse está sobre o botão */
+}
+
+/* Estilos para telas menores (por exemplo, dispositivos móveis) */
+@media (max-width: 425px) {
+  .AD {
+    background-image: url('../Imagens/ad-mobile.jpg');
+      flex-direction: column; /* Empilha o conteúdo em telas menores */
+      align-items: center; /* Centraliza verticalmente o conteúdo */
+      height: auto; /* Altura automática com base no conteúdo */
+      text-align: center; /* Alinha o texto ao centro */
+  }
+
+  .Propaganda {
+      margin: 1rem;
+      font-size: 1rem; /* Reduza o tamanho da fonte para telas menores */
+  }
+
+  .Propaganda h2 {
+      padding-top: 0.5rem;
+  }
+
+  .AD-butao button {
+      font-size: 1rem; /* Reduza o tamanho da fonte para telas menores */
+      margin: 1rem;
+  }
+}

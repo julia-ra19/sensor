@@ -1,0 +1,50 @@
+/* Estilos para telas maiores (por exemplo, desktop) */
+.textoImagem {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex; /* Define o contêiner como flexível para organizar imagem e texto lado a lado */
+  align-items: center; /* Centraliza verticalmente os elementos dentro do contêiner */
+  justify-content: space-between; /* Justifica o texto à esquerda e a imagem à direita */
+}
+
+.textoImagem img {
+  max-width: 50%; /* Defina a largura máxima da imagem (ajuste conforme necessário) */
+  max-height: auto; /* A altura da imagem se ajustará automaticamente para manter a proporção */
+}
+
+.textoImagem p {
+  flex: 1; /* Ocupa o espaço restante no contêiner */
+  padding: 1rem;
+  font-size: 1.4rem;
+  text-align: justify; /* Justifica o texto */
+  margin-right: 1.5rem; /* Remove a margem à direita */
+}
+.texto p {
+  flex: 1; /* Ocupa o espaço restante no contêiner */
+  padding: 1rem;
+  font-size: 1.4rem;
+  text-align: justify; /* Justifica o texto */
+  margin-right: 0; /* Remove a margem à direita */
+}
+
+
+/* Estilos para telas menores (por exemplo, dispositivos móveis) */
+@media (max-width: 768px) {
+  .textoImagem {
+      flex-direction: column; /* Empilha a imagem em cima do texto em telas menores */
+      text-align: center; /* Centraliza o texto */
+  }
+
+  .textoImagem img {
+      max-width: 100%; /* A imagem se ajustará ao tamanho do contêiner em telas menores */
+      max-height: auto;
+      margin-bottom: 1rem; /* Adicione espaço entre a imagem e o texto empilhado */
+  }
+
+  .textoImagem p {
+      margin: 0 1rem; /* Adicione margem para o texto nos lados esquerdo e direito */
+  }
+  .texto p, .texto h2 {
+    margin: 0 1rem; /* Adicione margem para o texto nos lados esquerdo e direito */
+}
+}

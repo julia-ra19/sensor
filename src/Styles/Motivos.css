@@ -1,0 +1,113 @@
+/* Estilos base */
+.Motivos {
+    background-color: var(--azul-secundario);
+}
+
+.Titulo-motivos {
+    color: white;
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+
+.Titulo-motivos p {
+   padding: 4rem;
+   font-size: 3rem;
+   font-weight: 600;
+}
+
+/* Estilos para os quadrados */
+.quadrados {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se ajustem automaticamente ao tamanho da tela */
+    justify-content: space-between;
+    background-color: var(--azul-secundario); /* Define a cor de fundo */
+    overflow: hidden; /* Evita sobreposição */
+}
+
+.item3, .item2, .item1 {
+    height: 30rem;
+    width: calc(33.33% - 2rem); /* Distribui os itens em três colunas, com margens entre eles */
+    margin: 1rem;
+    border-radius: 4rem;
+    background-color: var(--azul-principal);
+    text-align: center;
+    padding: 1.6rem;
+    display: flex; /* Para alinhar os conteúdos verticalmente */
+    flex-direction: column; /* Alinhar o conteúdo verticalmente */
+    align-items: center;
+}
+
+.item3 p, .item2 p, .item1 p {
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    color: white;
+}
+
+.quadrados img {
+    max-width: 50%;
+    height: auto;
+}
+
+ /* Consulta de mídia para telas menores */
+@media screen and (max-width: 425px) {
+    .quadrados {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-right: 2rem;
+    }
+    
+    .item3, .item2, .item1 {
+        width: 100%;
+        
+    }
+} 
+
+@media screen and (max-width: 320px) {
+    .quadrados {
+        flex-direction: column; /* Altera para uma única coluna */
+        align-items: center; /* Centraliza verticalmente os elementos */
+    }
+    
+    .item3, .item2, .item1 {
+        margin: 1rem 0; /* Remove as margens horizontais */
+        width: 100%; /* Ocupa toda a largura disponível */
+    }
+
+            .Titulo-motivos p {
+                font-size: 1.5rem;
+                padding: 10%;
+            }
+
+            .quadrados {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                padding: 5%;
+                
+            }
+
+                .item3 p, .item2 p, .item1 p
+                {
+                    font-size: 2rem;
+                }
+
+                .quadrados img {
+                    max-width: 100%;
+                }
+
+                .Titulo-motivos {
+                    color: white;
+                    margin-top: 1rem;
+                    margin-left: 2rem;
+                }
+                
+                .Titulo-motivos p {
+                   padding: 1rem;
+                   font-size: 1.5rem;
+                   font-weight: 600;
+                }
+                
+
+
+        }

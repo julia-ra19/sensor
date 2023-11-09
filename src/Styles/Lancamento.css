@@ -1,0 +1,86 @@
+/* Estilos para telas maiores (por exemplo, desktop) */
+.Texto-lancamento h2 {
+    margin: 2rem 4rem;
+    color: var(--azul-principal);
+    font-size: 3rem;
+}
+
+.Subtitulo {
+    font-size: 3rem;
+    font-weight: 200;
+    margin: 4rem;
+}
+
+.texto {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 2rem;
+}
+
+.texto p {
+    padding-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+.verde {
+    color: var(--verde);
+    font-weight: 600;
+}
+
+.amarelo {
+    color: var(--amarelo);
+    font-weight: 600;
+}
+
+.vermelho {
+    color: var(--vermelho);
+    font-weight: 600;
+}
+
+.semaforo {
+    margin-bottom: -15vh;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100%; /* Defina uma altura para o contêiner (ajuste conforme necessário) */
+}
+
+.semaforo img {
+    margin-bottom: -15vh;
+    max-width: 100%; /* Certifica-se de que a imagem não exceda a largura do contêiner */
+    max-height: auto; /* A altura da imagem se ajustará automaticamente para manter a proporção */
+    margin-bottom: 2rem; /* Adicione espaço abaixo da imagem */
+}
+
+/* Estilos para telas menores (por exemplo, dispositivos móveis) */
+@media (max-width: 768px) {
+    .Texto-lancamento h2 {
+        margin: 2rem;
+        font-size: 2rem; /* Reduza o tamanho da fonte para telas menores */
+    }
+
+    .Subtitulo {
+        font-size: 2rem; /* Reduza o tamanho da fonte para telas menores */
+        margin: 2rem; /* Reduza a margem para telas menores */
+    }
+
+    .texto {
+        margin-left: 1rem; /* Reduza a margem esquerda para telas menores */
+        margin-right: 1rem; /* Reduza a margem direita para telas menores */
+        margin-top: 1rem; /* Reduza a margem superior para telas menores */
+    }
+
+    .texto p {
+        padding-bottom: 1rem; /* Reduza o espaço abaixo dos parágrafos para telas menores */
+        font-size: 1.4rem; /* Reduza o tamanho da fonte para telas menores */
+    }
+
+    .verde, .amarelo, .vermelho {
+        font-size: 1.6rem; /* Reduza o tamanho da fonte para telas menores */
+    }
+
+    .semaforo img {
+        margin-bottom: 1rem; /* Reduza o espaço abaixo da imagem para telas menores */
+    }
+}

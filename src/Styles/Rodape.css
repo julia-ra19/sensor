@@ -1,0 +1,65 @@
+/* Estilos para telas maiores (por exemplo, desktop) */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 1.6rem; /* Adicione um espaçamento à direita entre os elementos */
+}
+
+.rodape {
+  margin: 2rem 2rem 4rem 2rem;
+  font-size: 1.2rem;
+}
+
+.hr-container {
+  position: relative;
+}
+
+.hr-text {
+  display: inline-block;
+  width: calc(100% - 4rem); /* Ajuste a largura conforme necessário */
+  vertical-align: middle; /* Alinhe verticalmente com o texto */
+  border-top: 1px solid #000; /* Estilo da linha */
+  margin: 0 0.2rem; /* Espaçamento opcional à esquerda e à direita */
+}
+
+/* Estilos para telas menores (por exemplo, dispositivos móveis) */
+@media (max-width: 768px) {
+  li {
+      display: block; /* Empilhe os elementos em telas menores */
+      margin-right: 0; /* Remova o espaçamento à direita em telas menores */
+      margin-bottom: 1rem; /* Adicione espaço entre os elementos empilhados */
+  }
+
+  .rodape {
+      margin: 2rem;
+  }
+
+  .hr-text {
+      width: calc(100% - 2rem); /* Reduza a largura da linha horizontal para telas menores */
+      margin: 0.5rem 1rem; /* Ajuste o espaçamento à esquerda e à direita */
+  }
+}
+
+@media (max-width: 320px) {
+  li {
+      display: block; /* Empilhe os elementos em telas menores */
+      margin-right: 0; /* Remova o espaçamento à direita em telas menores */
+      margin-bottom: 1rem; /* Adicione espaço entre os elementos empilhados */
+     
+  }
+
+  .rodape {
+      margin: 1rem;
+      font-size: 1rem;
+  }
+
+  .hr-text {
+      width: calc(100% - 2rem); /* Reduza a largura da linha horizontal para telas menores */
+      margin: 0.5rem 1rem; /* Ajuste o espaçamento à esquerda e à direita */
+  }
+}
+
